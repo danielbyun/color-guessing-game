@@ -18,14 +18,20 @@ h1, h3 {
   margin-top: 0;
   margin-bottom: 0; }
 
+.selected {
+  background-color: #DB7093 !important;
+  color: #ffffff !important; }
+
 #topNav {
   display: flex;
   height: 10em;
-  background-color: #48D1CC;
+  background-color: #DB7093;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: #ffffff; }
+  #topNav h1 {
+    font-size: 30px; }
   #topNav #rgb {
     font-size: 2em;
     text-transform: uppercase; }
@@ -35,13 +41,33 @@ h1, h3 {
   height: 2em;
   background-color: #ffffff;
   align-items: center;
-  color: #48D1CC; }
-  #bottomNav h3:nth-child(1) {
-    justify-content: flex-start; }
-  #bottomNav h3:nth-child(2),
-  #bottomNav h3:nth-child(3) {
-    color: black;
-    justify-content: flex-end; }
+  color: #ffffff;
+  list-style-type: none;
+  margin-top: 0;
+  justify-content: center; }
+  #bottomNav button {
+    border: none;
+    color: #DB7093;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    background-color: #ffffff;
+    height: 100%;
+    transition: all 0.3s;
+    -moz-animation: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    outline: none; }
+  #bottomNav button:hover {
+    color: white;
+    background: #DB7093; }
+  #bottomNav #easyBtn {
+    margin-left: 2em; }
+  #bottomNav #result {
+    color: #DB7093;
+    display: inline-block;
+    width: 15%;
+    text-align: center; }
 
 #boxes {
   display: flex;
@@ -54,6 +80,10 @@ h1, h3 {
     width: 10em;
     margin: 0.5em;
     background-color: goldenrod;
-    border-radius: 17%; }
+    border-radius: 17%;
+    transition: background 0.3s;
+    -moz-animation: background 0.3s;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s; }
 
 /*# sourceMappingURL=colorGame.css.map */
