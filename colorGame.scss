@@ -102,3 +102,15 @@ h1, h3 {
   }
 }
 
+@media only screen and (max-width: 502px){
+  #topNav {
+    h1 {
+      font-size: 25px;
+      transition: all 0.2s;
+    }
+    #rgb {
+      font-size: 1.5em;
+      transition: all 0.2s;
+    }
+  }
+}
